@@ -36,7 +36,18 @@ Open **bootstrap.less** file which is located in **./public/stylesheets/grid** f
 @columnClassName: '.col'; -- You will change base column name of its own.
 @offsetClassName: '.offset'; -- You will change base offset name of its own.
 ```
-Also you can adding some styles in gridiron. Example:
+
+##Creating test HTML file for your grid.
+
+```
+cd <gridiron example directory>
+node tpl name=test columns=16 screen=960 tablet=768 mobilePortrait=300 mobileLandscape=420
+```
+This manipulate create new HTML file in **./public/** directory. Open him. Remember - you can first configure bootstrap.less .
+
+## Additional. Customize gridiron.
+
+Also you can adding some styles in gridiron. 
 
 Open a **gridiron.less** file and add something like this (in selected media query):
 
@@ -60,7 +71,7 @@ Result:
   @tmp:(@var * @index)+25*(@index - 1);
 }
 ```
-And after you can use that in yor new styles:
+And after you can use that in your makeStyle:
 
 ```
 .makeStyle(~".b-container margin",margin-left,px,@unit,@colsCount - 1,yourExecutor);
