@@ -1,7 +1,7 @@
 Gridiron.
 ========
 
-Grid System Maker. Create own grid system with custom columns count and custom sizes. 
+Grid System Maker. Create own responsive grid system with custom columns count and custom sizes. 
 
 ##Getting started.
 
