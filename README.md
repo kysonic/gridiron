@@ -9,7 +9,6 @@ Grid System Maker. Create own grid system with custom columns count and custom s
 cd <gridiron example directory>
 npm install
 gulp
-
 ```
 
 ##Creating own grid system.
