@@ -19,7 +19,7 @@ Open **bootstrap.less** file which is located in **./public/stylesheets/grid** f
 
 ```
 /* Count of columns of your grid system */
-@colsCount: 16; -- Counts of your's future grid system.
+@colsCount: 16; -- Count of your's future grid system columns.
 /* Margins */
 @marginLeft: 10; -- Margins
 @marginRight: 10; -- 
@@ -36,4 +36,20 @@ Open **bootstrap.less** file which is located in **./public/stylesheets/grid** f
 @columnClassName: '.col'; -- You will change base column name of its own.
 @offsetClassName: '.offset'; -- You will change base offset name of its own.
 ```
+Also you can adding some styles in gridiron. Example:
 
+Open a **gridiron.less** file and add something like this (in selected media query):
+
+```
+.makeStyle(~".b-container margin",margin-left,px,@unit,@colsCount - 1,baseColumn);
+```
+Result:
+```
+.b-container margin1 {
+  margin-left: 40px
+}
+.b-container margin2 {
+  margin-left: 60px
+}
+......
+```
