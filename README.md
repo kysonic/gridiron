@@ -53,3 +53,15 @@ Result:
 }
 ......
 ```
+Аnd yet you can add a executor. Open a **maker.less** file and add something like this:
+
+```
+.mixin(yorExecutor;@index) {
+  @tmp:(@var * @index)+25*(@index - 1);
+}
+```
+And after you can use that in yor new styles:
+
+```
+.makeStyle(~".b-container margin",margin-left,px,@unit,@colsCount - 1,yourExecutor);
+```
