@@ -1,0 +1,19 @@
+/* Count of columns of your grid system */
+@colsCount: 18;
+/* Margins */
+@marginLeft: 10;
+@marginRight: 10;
+/* Screen landscape */
+@baseLandscape: 1080;
+@unit: floor(@baseLandscape / @colsCount) - (@marginLeft+@marginRight);
+/* Table Portrait landscape */
+@tabletPortrait: 864;
+@tabletUnit: floor(@tabletPortrait / @colsCount) - (@marginLeft+@marginRight);
+/* Mobiles is const */
+@mobilePortraitWidth: 300;
+@mobileLandscapeWidth: 420;
+/* Name of columns classes */
+@columnClassName: '.col';
+@offsetClassName: '.offset';
+
+

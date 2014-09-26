@@ -1,0 +1,27 @@
+@tmp: '';
+/* Wrapper for a maker function */
+.makeStyle (@style,@prop,@units,@var,@iterator,@fn) {
+    .maker(@iterator);
+}
+/* Maker function - create styles */
+.maker (@index) when (@index > 0) {
+  @tmp: ~"@{style}@{index}";
+  @{tmp} {
+      .mixin(@fn;@index);
+      @{prop}: ~"@{tmp}@{units}";
+  }
+  .maker(@index - 1);
+}
+.maker(0) {}
+/* Mixin's for a calculate your params*/
+
+.mixin(baseColumn;@index) {
+  @tmp:(@var * @index)+20*(@index - 1);
+}
+.mixin(baseOffset;@index) {
+  @tmp:((@var * @index)+20*(@index - 1))+20;
+}
+.mixin(empty;@index){
+  @tmp: @var;
+}
+

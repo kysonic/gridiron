@@ -1,0 +1,24 @@
+{
+  "name": "gridiron",
+  "version": "0.0.1",
+  "description": "Is a adaptive grid system maker. ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grid",
+    "gridiron",
+    "grid",
+    "system",
+    "adaptive"
+  ],
+  "author": "kysonic",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-csso": "^0.2.9",
+    "gulp-less": "^1.3.6"
+  }
+}
