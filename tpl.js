@@ -22,7 +22,7 @@ var body = '';
 body+='<div class="b-container"><div class="b-row"><div class="columns col'+params['columns']+' one">Columns: '+params['columns']+'<br/>Screen: '+params['screen']+'px<br/>TabletPortrait: '+params['tablet']+'px<br/>MobilePortrait: '+params['mobilePortrait']+'px<br/>MobileLandscape: '+params['mobileLandscape']+'px</div></div>';
 
 for(var i=1;i<=params['columns']-1;i++){
-   body+='<div class="b-row"><div class="columns col'+i+' one">'+i+'</div><div class="columns col'+(params['columns']-i)+' one">'+(params['columns']-i)+'</div></div>';
+   body+='<div class="b-row"><div class="columns col'+i+' one">'+i+'</div><div class="columns col'+(params['columns']-i)+' two">'+(params['columns']-i)+'</div></div>';
 }
 
 body+='</div>';
